@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Adminator - Personalización y Variables de Marca
+   Puedes modificar estas variables para adaptar los colores a tu empresa.
+   ========================================================================== */
+
+:root {
+    /* Descomenta y cambia estos valores si deseas cambiar los colores de tu marca:
+    --primary:       #4F46E5;
+    --primary-light: #6366F1;
+    --primary-dark:  #4338CA;
+    --primary-soft:  #EEF2FF;
+    --primary-ring:  rgba(79, 70, 229, 0.2);
+    */
+}
+
+/* Modo oscuro (Opcional - sobrescribir si cambiaste los primarios) */
+:root[data-theme="dark"] {
+    /*
+    --primary:       #818CF8;
+    --primary-light: #A5B4FC;
+    --primary-dark:  #6366F1;
+    --primary-soft:  #1E1B4B;
+    --primary-ring:  rgba(129, 140, 248, 0.25);
+    */
+}
+
+/* ==========================================================================
+   Logotipo Propio
+   ========================================================================== */
+.brand-logo img {
+    max-height: 36px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* ==========================================================================
+   Alertas y Mensajes Flash de Laravel
+   ========================================================================== */
+.alert-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    animation: rise-in 300ms ease both;
+}
+
+.alert-box svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.alert-box.alert-success {
+    background: var(--success-soft);
+    color: var(--success);
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+.alert-box.alert-danger {
+    background: var(--danger-soft);
+    color: var(--danger);
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.alert-box.alert-warning {
+    background: var(--warning-soft);
+    color: var(--warning);
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+.alert-box.alert-info {
+    background: var(--info-soft);
+    color: var(--info);
+    border-color: rgba(14, 165, 233, 0.2);
+}
+
+.alert-box ul {
+    margin: 4px 0 0 16px;
+    padding: 0;
+    list-style-type: disc;
+}
